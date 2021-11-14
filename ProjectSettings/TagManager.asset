@@ -10,9 +10,7 @@ TagManager:
   - blood
   - eq
   - wood
-  - petrol
-  - fireball
-  - stone
+  - Enemy
   layers:
   - Default
   - TransparentFX

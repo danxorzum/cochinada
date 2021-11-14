@@ -36,11 +36,47 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Granade.cs" />
-     <Compile Include="Assets\Enemy.cs" />
-     <Compile Include="Assets\Gun.cs" />
-     <Compile Include="Assets\PlayerController.cs" />
-     <Compile Include="Assets\EnemiesController.cs" />
+    <Analyzer Include="C:\Users\ORBYTE\Documents\cochinada\Assets\FPS\Plugins\Demigiant\DOTween\DOTween.dll" />
+    <Analyzer Include="C:\Users\ORBYTE\Documents\cochinada\Assets\FPS\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll" />
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\FPS\Scripts\Granade.cs" />
+     <Compile Include="Assets\FPS\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\FPS\Scripts\EnemiesController.cs" />
+     <Compile Include="Assets\FPS\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+     <Compile Include="Assets\FPS\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
+     <Compile Include="Assets\FPS\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+     <Compile Include="Assets\FPS\Scripts\Enemy.cs" />
+     <Compile Include="Assets\FPS\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+     <Compile Include="Assets\FPS\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+     <Compile Include="Assets\FPS\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\FPS\Scripts\Gun.cs" />
+     <Compile Include="Assets\FPS\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\FPS\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\FPS\Scripts\View.cs" />
+     <Compile Include="Assets\FPS\Scripts\MainMenu.cs" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\FPS\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\FPS\Plugins\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\FPS\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -267,7 +303,7 @@
         <HintPath>C:\Users\ORBYTE\Documents\cochinada\Library\PackageCache\com.unity.visualscripting@1.6.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-        <HintPath>C:\Users\ORBYTE\Documents\cochinada\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+        <HintPath>C:\Users\ORBYTE\Documents\cochinada\Assets\FPS\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -676,10 +712,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{0f43ba67-d9fa-80b4-b2d1-5d90868ff2a4}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
